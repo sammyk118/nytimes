@@ -5,10 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      
 </head>
 <body>
-    
 
+    <header>
+        <!-- Navbar content -->
+        <h1>New York Times Search</h1>
+    </header>
+
+    <main class='container'>
+
+        <h4>Search Parameters</h4>
+
+        
+        <form id="search-term">
+            <label for="search-term">Search Term:</label><br>
+            <input type="text" id="search-input">
+          </form>
+    
+          <form id="record-count">
+            <label for="record-count">Number of Records to Retrieve:</label><br>
+            <input type="text" id="records">
+          </form>
+ 
+          <form id="start-year">
+            <label for="start-year">Start Year (Optional):</label><br>
+            <input type="text" id="start">
+          </form>
+      
+          <form id="end-year">
+            <label for="end-year">End Year (Optional):</label><br>
+            <input type="text" id="end">
+          </form>
+
+          <br/>
+
+        <button id="search-btn">Search</button>
+        <button id="clear-btn">Clear</button>
+        
+    </main>
+
+    <br/>
+
+  <div class='container' id="article-area">
+
+    <h4>Top Articles</h4>
+
+
+  </div>  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
